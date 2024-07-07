@@ -1,0 +1,213 @@
+.container {
+  display: flex;
+  height: 100vh;
+  font-family: Arial, sans-serif;
+}
+
+.left-side {
+  width: 660px;
+  background: url('../../assets/logo-background.png') no-repeat center center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  font-size: 24px;
+}
+
+.right-side {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f0f0f0;
+}
+
+.right-side > div {
+  text-align: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Центрирование по горизонтали */
+  justify-content: center; /* Центрирование по вертикали */
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  background-color: transparent; /* Прозрачный фон */
+}
+
+.input-container {
+  width: 426px; /* Ширина полей ввода */
+  margin-bottom: 10px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  color: #696F79;
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 500;
+  text-align: left;
+}
+
+input[type="email"],
+input[type="password"] {
+  
+  min-width: 426px; /* Максимальная ширина кнопок */
+  height: 64px;
+  border: 1px solid #ccc;
+  border-radius: 30px;
+  padding: 0 20px;
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+input:focus {
+  outline: none;
+  border-color: #007BFF;
+}
+
+.checkbox-container {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+
+
+button {
+  width: 426px; /* Ширина кнопки */
+  height: 64px; /* Высота кнопки */
+  margin-top: 15px; /* Отступ сверху */
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+
+button.primary,
+button.google-button {
+  display: flex;
+  background-color: #8692A6;
+  color: white;
+  align-items: center;
+  justify-content: center;
+}
+
+button.primary:hover {
+  background-color: #FFFFFF;
+  color: black;
+}
+
+button.google-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  color: #333;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  padding: 8px 20px;
+  width: 100%; /* Ширина кнопки Google */
+  max-width: 426px; /* Максимальная ширина кнопки Google */
+  margin-top: 10px;
+}
+
+button.google-button:hover {
+  background-color: #f0f0f0;
+}
+
+.google-icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+
+input[type="checkbox"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 16px;
+  height: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-right: 5px;
+  position: relative;
+  cursor: pointer;
+}
+
+input[type="checkbox"]:checked {
+  background-color: #696F79;
+  border: 1px solid #696F79;
+}
+
+input[type="checkbox"]:checked::after {
+  content: '';
+  position: absolute;
+  left: 4px;
+  top: 0;
+  width: 6px;
+  height: 12px;
+  border: solid black;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+
+.password-input-container {
+  position: relative;
+  width: 100%;
+}
+
+.password-input-container input {
+  width: 100%;
+  height: 64px;
+  border: 1px solid #ccc;
+  border-radius: 30px;
+  padding: 0 20px;
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+.password-input-container.show-password input {
+  border-radius: 30px;
+  padding: 0 20px;
+  height: 64px;
+}
+
+.toggle-password {
+  position: absolute;
+  right: -220px; /* Пример: сдвигаем на 20px влево */
+  top: 50%;
+  transform: translateY(-70%);
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  color: #007BFF;
+}
+
+h1 {
+  margin-bottom: 15px;
+  color: black;
+  font-family: Poppins;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+h2 {
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.eye-icon,
+.eye-slash-icon {
+  font-size: 24px; /* Adjust the size as needed */
+}
